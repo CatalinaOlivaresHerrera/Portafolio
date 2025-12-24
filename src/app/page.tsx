@@ -213,8 +213,8 @@ export default function Home() {
     }
   };
 
-  // RUTA DEL CV - OPCIÓN 1: PDF en carpeta raíz de public
-  const cvPath = "/CV-Catalina-Olivares-Herrera.pdf";
+  // RUTA DEL CV CORREGIDA - PDF está en la carpeta assets
+  const cvPath = "/assets/CV-Catalina-Olivares-Herrera.pdf";
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-gray-900 via-black to-blue-900 text-white overflow-hidden">
@@ -554,7 +554,7 @@ export default function Home() {
                     </a>
                   </div>
                   
-                  {/* Botón CV - Usando la misma variable */}
+                  {/* Botón CV - CORREGIDO */}
                   <div className="pt-4 md:pt-6 border-t border-white/10">
                     <a 
                       href={cvPath}
