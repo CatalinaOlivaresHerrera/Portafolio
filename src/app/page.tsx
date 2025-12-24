@@ -213,6 +213,9 @@ export default function Home() {
     }
   };
 
+  // RUTA DEL CV - OPCIÓN 1: PDF en carpeta raíz de public
+  const cvPath = "/CV-Catalina-Olivares-Herrera.pdf";
+
   return (
     <div className="min-h-screen bg-gradient-to-br from-gray-900 via-black to-blue-900 text-white overflow-hidden">
       {/* Indicador móvil */}
@@ -273,8 +276,8 @@ export default function Home() {
                 Contáctame
               </a>
               <a 
-                href="/assets/cv/CV-Catalina-Olivares-Herrera.pdf" 
-                download
+                href={cvPath} 
+                download="CV-Catalina-Olivares-Herrera.pdf"
                 className="flex items-center justify-center gap-2 bg-gradient-to-r from-green-600 to-teal-500 hover:from-green-500 hover:to-teal-400 text-white font-semibold py-3 px-6 rounded-2xl transition-all duration-300 transform hover:scale-105 w-full sm:w-auto text-sm sm:text-base"
               >
                 <span>📄</span>
@@ -551,11 +554,11 @@ export default function Home() {
                     </a>
                   </div>
                   
-                  {/* Botón CV */}
+                  {/* Botón CV - Usando la misma variable */}
                   <div className="pt-4 md:pt-6 border-t border-white/10">
                     <a 
-                      href="/assets/cv/CV-Catalina-Olivares-Herrera.pdf" 
-                      download
+                      href={cvPath}
+                      download="CV-Catalina-Olivares-Herrera.pdf"
                       className="flex items-center justify-center space-x-2 bg-gradient-to-r from-green-600 to-teal-500 hover:from-green-500 hover:to-teal-400 text-white font-semibold py-3 px-4 md:py-3 md:px-6 rounded-xl md:rounded-2xl transition-all duration-300 transform hover:scale-[1.02] active:scale-95 w-full text-sm md:text-base"
                     >
                       <span className="text-lg">📄</span>
