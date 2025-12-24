@@ -276,8 +276,8 @@ export default function Home() {
                 Contáctame
               </a>
               <a 
-                href={cvPath} 
-                download="CV-Catalina-Olivares-Herrera.pdf"
+                href={cvPath}
+                download="/assets/CV/CVCatalinaOlivaresHerrera.pdf"
                 className="flex items-center justify-center gap-2 bg-gradient-to-r from-green-600 to-teal-500 hover:from-green-500 hover:to-teal-400 text-white font-semibold py-3 px-6 rounded-2xl transition-all duration-300 transform hover:scale-105 w-full sm:w-auto text-sm sm:text-base"
               >
                 <span>📄</span>
@@ -558,7 +558,7 @@ export default function Home() {
                   <div className="pt-4 md:pt-6 border-t border-white/10">
                     <a 
                       href={cvPath}
-                      download="CV-Catalina-Olivares-Herrera.pdf"
+                      download="/assets/CV/CVCatalinaOlivaresHerrera.pdf"
                       className="flex items-center justify-center space-x-2 bg-gradient-to-r from-green-600 to-teal-500 hover:from-green-500 hover:to-teal-400 text-white font-semibold py-3 px-4 md:py-3 md:px-6 rounded-xl md:rounded-2xl transition-all duration-300 transform hover:scale-[1.02] active:scale-95 w-full text-sm md:text-base"
                     >
                       <span className="text-lg">📄</span>
