@@ -1,5 +1,4 @@
 'use client';
-import Chatbot from "./components/Chatbot";
 import { useState, useEffect, useRef } from "react";
 
 // Interfaces TypeScript
@@ -213,9 +212,6 @@ export default function Home() {
     }
   };
 
-  // RUTA DEL CV CORREGIDA - PDF está en la carpeta assets
-  const cvPath = "/assets/CV-Catalina-Olivares-Herrera.pdf";
-
   return (
     <div className="min-h-screen bg-gradient-to-br from-gray-900 via-black to-blue-900 text-white overflow-hidden">
       {/* Indicador móvil */}
@@ -274,14 +270,6 @@ export default function Home() {
                 className="border border-cyan-400 text-cyan-300 hover:bg-cyan-400/10 font-semibold py-3 px-6 sm:px-8 rounded-2xl transition-all duration-300 w-full sm:w-auto text-sm sm:text-base text-center"
               >
                 Contáctame
-              </a>
-              <a 
-                href={cvPath}
-                download="/assets/CV/CVCatalinaOlivaresHerrera.pdf"
-                className="flex items-center justify-center gap-2 bg-gradient-to-r from-green-600 to-teal-500 hover:from-green-500 hover:to-teal-400 text-white font-semibold py-3 px-6 rounded-2xl transition-all duration-300 transform hover:scale-105 w-full sm:w-auto text-sm sm:text-base"
-              >
-                <span>📄</span>
-                <span>Descargar CV</span>
               </a>
             </div>
           </div>
@@ -553,18 +541,6 @@ export default function Home() {
                       +56 9 4658 4847
                     </a>
                   </div>
-                  
-                  {/* Botón CV - CORREGIDO */}
-                  <div className="pt-4 md:pt-6 border-t border-white/10">
-                    <a 
-                      href={cvPath}
-                      download="/assets/CV/CVCatalinaOlivaresHerrera.pdf"
-                      className="flex items-center justify-center space-x-2 bg-gradient-to-r from-green-600 to-teal-500 hover:from-green-500 hover:to-teal-400 text-white font-semibold py-3 px-4 md:py-3 md:px-6 rounded-xl md:rounded-2xl transition-all duration-300 transform hover:scale-[1.02] active:scale-95 w-full text-sm md:text-base"
-                    >
-                      <span className="text-lg">📄</span>
-                      <span>Descargar CV</span>
-                    </a>
-                  </div>
                 </div>
               </div>
             </div>
@@ -596,8 +572,6 @@ export default function Home() {
         onClose={() => setSelectedProject(null)}
         project={selectedProject}
       />
-
-      <Chatbot />
     </div>
   );
 }
