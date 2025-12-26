@@ -193,7 +193,7 @@ export default function Home() {
         "Sistema de alertas de emergencia"
       ],
       technologies: ["Flutter", "Firebase", "Push Notifications", "UX Research"],
-      githubUrl: "https://github.com/CatalinaOlivaresHerrera/mi-familia-te-ama"
+      githubUrl: "https://github.com/CatalinaOlivaresHerrera/ProyectoAbuelos"
     },
     nova: {
       title: "Practica Profesional - NOVA ANALYTICS",
@@ -208,7 +208,7 @@ export default function Home() {
         "Optimización de rendimiento"
       ],
       technologies: ["Laravel", "Mysql", "html", "css", "javaScript"],
-      githubUrl: "https://github.com/CatalinaOlivaresHerrera/practica-profesional"
+      githubUrl: "https://github.com/CatalinaOlivaresHerrera/NovaCompleto"
     }
   };
 
